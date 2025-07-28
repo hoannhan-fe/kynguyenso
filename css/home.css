@@ -1,0 +1,567 @@
+/* Home Page Styles */
+.home-page {
+    min-height: 100vh;
+    border-top: 2px solid #A87C12;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg-desktop {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('../images/banner-trang-chu-1-CbMjNaHz.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-bg-mobile {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('../images/banner-trang-chu-mobile-1-yFoGqgXo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.hero-description {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.highlight {
+    color: #A87C12;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Tools Section */
+.tools-section {
+    padding: 80px 0;
+    background: #FDFDFB;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.tools-category {
+    margin-bottom: 60px;
+    border-bottom: 1px dashed #35303047;
+    padding-bottom: 40px;
+}
+
+.tools-category:last-child {
+    border-bottom: none;
+}
+
+.category-header {
+    margin-bottom: 30px;
+}
+
+.category-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #A87C12;
+    margin: 0;
+}
+
+.tools-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 0 3px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tools-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.tool-item {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.tool-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.tool-link:hover {
+    transform: translateY(-5px);
+}
+
+.tool-link:hover .tool-name {
+    color: #A87C12;
+}
+
+.tool-icon {
+    width: 145px;
+    height: 145px;
+    background: linear-gradient(135deg, #FDFDFB 0%, #F3F3ED 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.tool-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.tool-icon.daily-icon {
+    position: relative;
+}
+
+.daily-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background: #ff4444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.daily-badge img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.tool-icon.book-icon {
+    position: relative;
+}
+
+.book-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background: #ff4444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.book-badge img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.tool-icon.calendar-icon {
+    position: relative;
+}
+
+.calendar-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.calendar-badge img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.zodiac-badge {
+    background: #FF9800;
+}
+
+.tool-name {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 145px;
+    transition: color 0.3s ease;
+}
+
+.coming-soon {
+    position: relative;
+}
+
+.coming-soon-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    color: white;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* Articles Section */
+.articles-section {
+    padding: 80px 0;
+    background: #f8f8f8;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.article-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.article-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.article-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-title {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.article-link:hover .article-title {
+    color: #A87C12;
+}
+
+/* Collaboration Section */
+.collaboration-section {
+    padding: 80px 0;
+    background: #F3F3ED;
+}
+
+.collaboration-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.collaboration-title {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.collaboration-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #A87C12;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.collaboration-button:hover {
+    background: black;
+    transform: translateY(-2px);
+}
+
+.collaboration-button svg {
+    transition: transform 0.3s ease;
+}
+
+.collaboration-button:hover svg {
+    transform: translateY(-2px);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #A87C12;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 450px;
+    }
+    
+    .hero-bg-desktop {
+        display: none;
+    }
+    
+    .hero-bg-mobile {
+        display: block;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-description {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .tools-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .tools-category {
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .tools-grid {
+        gap: 15px;
+    }
+    
+    .tool-icon {
+        width: 82px;
+        height: 82px;
+    }
+    
+    .tool-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .daily-badge {
+        width: 15px;
+        height: 15px;
+        top: -3px;
+        right: -3px;
+    }
+    
+    .daily-badge img {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .book-badge {
+        width: 15px;
+        height: 15px;
+        top: -3px;
+        right: -3px;
+    }
+    
+    .book-badge img {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .calendar-badge {
+        width: 15px;
+        height: 15px;
+        top: -3px;
+        right: -3px;
+    }
+    
+    .calendar-badge img {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .tool-name {
+        font-size: 12px;
+        max-width: 82px;
+    }
+    
+    .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .collaboration-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .collaboration-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-description {
+        font-size: 18px;
+    }
+    
+    .tools-grid {
+        gap: 10px;
+    }
+    
+    .tool-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .tool-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .daily-badge {
+        width: 12px;
+        height: 12px;
+        top: -2px;
+        right: -2px;
+    }
+    
+    .daily-badge img {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .book-badge {
+        width: 12px;
+        height: 12px;
+        top: -2px;
+        right: -2px;
+    }
+    
+    .book-badge img {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .calendar-badge {
+        width: 12px;
+        height: 12px;
+        top: -2px;
+        right: -2px;
+    }
+    
+    .calendar-badge img {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .tool-name {
+        font-size: 11px;
+        max-width: 70px;
+    }
+} 

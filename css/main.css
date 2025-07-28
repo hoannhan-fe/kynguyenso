@@ -1,0 +1,215 @@
+/* Reset và Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FDFDFB;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container-xl {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-xl-custom {
+    max-width: 1170px;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .max-md\:hidden {
+        display: none;
+    }
+    
+    .max-md\:block {
+        display: block;
+    }
+    
+    .max-md\:flex-col {
+        flex-direction: column;
+    }
+    
+    .max-md\:text-center {
+        text-align: center;
+    }
+}
+
+/* Background Colors */
+.bg-\[\#FDFDFB\] {
+    background-color: #FDFDFB;
+}
+
+.bg-\[\#F3F3ED\] {
+    background-color: #F3F3ED;
+}
+
+/* Text Colors */
+.text-\[\#A87C12\] {
+    color: #A87C12;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Typography */
+.font-bold {
+    font-weight: bold;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* Spacing */
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Border Radius */
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+/* Transitions */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.hover\:bg-black:hover {
+    background-color: black;
+}
+
+.hover\:text-\[\#a87c12\]:hover {
+    color: #a87c12;
+}
+
+/* Error Page */
+.error-page {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.error-page h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.error-page p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.error-page a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #A87C12;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.error-page a:hover {
+    background: #8B6910;
+    transform: translateY(-2px);
+} 

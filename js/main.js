@@ -51,6 +51,12 @@ class AstrorekaApp {
         document.addEventListener('click', (e) => {
             const link = e.target.closest('a[href]');
             if (link && link.href.includes(window.location.origin)) {
+                // Don't intercept direct file links
+                const href = link.getAttribute('href');
+                if (href === 'tools.html' || href === 'numerology.html' || href === 'index.html') {
+                    return; // Let browser handle these directly
+                }
+                
                 e.preventDefault();
                 this.navigateTo(link.href);
             }
@@ -160,7 +166,7 @@ class AstrorekaApp {
             const path = urlObj.pathname;
             const currentFile = window.location.pathname.split('/').pop();
             
-            // Handle direct file access - only redirect if not already on the correct page
+            // Handle direct file access for standalone pages - only redirect if not already on the correct page
             if ((path === '/numerology' || path === '/numerology.html') && currentFile !== 'numerology.html') {
                 window.location.href = 'numerology.html';
                 return;
@@ -170,7 +176,7 @@ class AstrorekaApp {
                 return;
             }
             
-            // Update current page
+            // For other pages, use SPA routing
             this.currentPage = path === '/' ? 'home' : path.slice(1);
             
             // Update URL without reload
